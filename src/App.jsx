@@ -9,6 +9,7 @@ function getAyahyNum(verse) {
 function App() {
     const [surah, setSurah] = useState(Quran[0]);
     const [blurState, setBlurState] = useState([]);
+    const [totalAyahs, setTotalAyahs] = useState(0);
     const [currAyah, setCurrAyah] = useState(-1);
 
     const nextAyah = () => {
@@ -56,6 +57,9 @@ function App() {
                                 Quran[e.target.value - 1]["total_verses"]
                             ).fill(true)
                         );
+                        setTotalAyahs(
+                            Quran[e.target.value - 1]["total_verses"]
+                        );
                     }}
                     className="select w-full max-w-xs bg-secondary rounded-lg my-5 mb-14"
                 >
@@ -92,6 +96,14 @@ function App() {
                         >
                             Reset
                         </button>
+                        <button
+                            onClick={() => {
+                                setCurrAyah(totalAyahs);
+                            }}
+                            className=" btn btn-info mb-4 mx-2"
+                        >
+                            Reveal All
+                        </button>
                     </div>
                 )}
                 {currAyah > -1 && (
@@ -108,7 +120,7 @@ function App() {
                                     key={verse["id"]}
                                     // className=" text-3xl font-indo leading-loose my-5 px-3 "
                                     className={` text-3xl font-indo leading-loose tracking-normal my-5 px-1  ${
-                                        idx + 1 > currAyah ? "blur-sm" : ""
+                                        idx + 1 > currAyah ? "blur-[7px]" : ""
                                     }`}
                                     dir="rtl"
                                 >
@@ -135,7 +147,15 @@ function App() {
             </div>
             <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-10 mb-4">
                 <div>
-                    <p>Created by Faihaan Arif</p>
+                    <p>
+                        Created by Faihaan Arif.{" "}
+                        <a
+                            className=" link link-primary"
+                            href="https://github.com/farif1234/quranhelper"
+                        >
+                            View code
+                        </a>
+                    </p>
                 </div>
             </footer>
         </div>
