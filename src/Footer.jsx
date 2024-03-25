@@ -7,7 +7,7 @@ const Footer = () => {
                 <p>
                     Created by Faihaan. Built with{" "}
                     <a
-                        href="https://quran.api-docs.io/v4/getting-started/introduction"
+                        href="https://api-docs.quran.com/docs/category/quran.com-api"
                         className=" link link-primary"
                     >
                         Quran.com API
