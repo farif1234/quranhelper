@@ -9,6 +9,7 @@ const Footer = () => {
                     <a
                         href="https://api-docs.quran.com/docs/category/quran.com-api"
                         className=" link link-primary"
+                        target="_blank"
                     >
                         Quran.com API
                     </a>
@@ -16,6 +17,7 @@ const Footer = () => {
                     <a
                         className=" link link-primary"
                         href="https://github.com/farif1234/quranhelper"
+                        target="_blank"
                     >
                         Open Source
                     </a>

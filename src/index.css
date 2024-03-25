@@ -5,8 +5,9 @@
 @layer base {
     @font-face {
         font-family: "IndoPak";
-        /* src: url("../public/fonts/noorehuda\ Regular.ttf"); */
+        /* src: url("../public/fonts/MUHAMMADIBold.woff"); */
         src: url("../public/fonts/Naskh-Nastaleeq-IndoPak-QWBW.woff");
+        /* src: url("../public/fonts/AlQuran-IndoPak-by-QuranWBW.v.4.2.2-COMPACT.woff"); */
         /* src: url("../public/fonts/_PDMS_Saleem_QuranFont.ttf"); */
         /* src: url("../public/fonts/Alqalam.ttf"); */
         /* src: url("../public/fonts/quran-indopak-master/fonts/pdms/PDMSSALEEMQURANFONTQESHIP0.ttf"); */
