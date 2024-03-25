@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-10 mb-4">
             <div>
                 <p>
-                    Created by Faihaan Arif. Built with{" "}
+                    Created by Faihaan. Built with{" "}
                     <a
                         href="https://quran.api-docs.io/v4/getting-started/introduction"
                         className=" link link-primary"
@@ -17,7 +17,7 @@ const Footer = () => {
                         className=" link link-primary"
                         href="https://github.com/farif1234/quranhelper"
                     >
-                        View code
+                        Open Source
                     </a>
                     .
                 </p>
